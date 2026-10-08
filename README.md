@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Without Supabase credentials, sample campus data powers the demo UI. Copy `.env.example` to `.env.local` and provide `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` to connect a Supabase project. Run `supabase/schema.sql` in its SQL editor first. The frontend uses only the public anon key; configure Auth and review RLS for your institution before adding real campus data. Faculty roles must be assigned by an administrator.
+Without Supabase credentials, sample campus data powers the demo UI. Set `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` in `.env.local` to connect a Supabase project. Run `supabase/schema.sql` in its SQL editor first. The frontend uses only a public publishable key; configure Auth and review RLS for your institution before adding real campus data. Faculty roles must be assigned by an administrator.
 
 ## Vercel
 
